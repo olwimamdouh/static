@@ -8,7 +8,7 @@ pipeline {
 		          def identity=awsIdentity();
 
 
-        		  s3Upload(file:'index.html', workingDir:'dist', includePathPattern:'**/*)
+        		  s3Upload(file:'index.html', workingDir:'dist', includePathPattern:'**/*')
                     }
                     sh 'echo "Hello World"'
                     sh '''
